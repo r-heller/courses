@@ -9,10 +9,13 @@ project:
     - "course4_ml_highdim/**/*.qmd"
     - "appendices/**/*.qmd"
 
+execute:
+  freeze: auto
+
 website:
   title: "biostats_courses"
   description: "A four-course biostatistics programme in R and Quarto."
-  site-url: "https://CHANGE_ME.github.io/biostats_curriculum/"
+  site-url: "https://r-heller.github.io/courses/"
   navbar:
     background: light
     title: "biostats_courses"
@@ -29,7 +32,7 @@ website:
         text: "About"
     right:
       - icon: github
-        href: https://github.com/CHANGE_ME/biostats_curriculum
+        href: https://github.com/r-heller/courses
   page-navigation: true
   page-footer:
     left: "Biostatistics Courses · MIT"
