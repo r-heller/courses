@@ -60,6 +60,29 @@
   }
 }
 
+/* Force Bootstrap's own CSS variables to track our palette so the
+   compiled `darkly` / `flatly` rules do not override the body colour
+   in the wrong direction when the user toggles. */
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--fg);
+  --bs-border-color: var(--rule);
+  --bs-secondary-bg: var(--surface);
+  --bs-tertiary-bg: var(--surface);
+  --bs-emphasis-color: var(--fg);
+  --bs-link-color: var(--accent);
+  --bs-link-hover-color: var(--accent-hover);
+  --bs-code-color: var(--code-fg);
+  --bs-heading-color: var(--fg);
+  --bs-primary: var(--accent);
+  --bs-primary-rgb: 26, 115, 232;
+}
+[data-bs-theme="dark"] {
+  --bs-primary-rgb: 121, 184, 255;
+}
+
 html { font-size: 17px; }
 html, body {
   background: var(--bg) !important;

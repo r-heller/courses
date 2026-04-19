@@ -43,7 +43,8 @@ website:
       [Glossary](/appendices/glossary.qmd) ·
       [Common errors](/appendices/common_errors.qmd) ·
       [Writing a report](/appendices/writing_a_report.qmd) ·
-      [References](/references.qmd)
+      [References](/references.qmd) ·
+      [Acknowledgements](/acknowledgements.qmd)
     right: "Built with [Quarto](https://quarto.org)"
 
 format:

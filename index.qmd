@@ -105,15 +105,7 @@ at a group meeting or a seminar. One `quarto render` builds both.
 
 - [Get Started](get_started.qmd) — install, clone, and render the site locally.
 - [Schedule](schedule.qmd) — a linked index of every lab, every deck, every script.
+- [Interactive apps](shiny.qmd) — Shiny companions to the labs.
 - [Research workflow](appendices/research_workflow.qmd), [Decision tree](appendices/decision_tree.qmd), [Glossary](appendices/glossary.qmd), [Common errors](appendices/common_errors.qmd), [Writing a report](appendices/writing_a_report.qmd).
 - [References](references.qmd) — the sources and teaching ecosystems we drew on.
-
-### Acknowledgements
-
-Heartfelt thanks to **Chi Zhang** and the OCBE team at the University of Oslo for their open-source course
-[*MF9130E — Introductory Course in Statistics*](https://ocbe-uio.github.io/teaching_mf9130e/)
-and the accompanying [GitHub repository](https://github.com/ocbe-uio/teaching_mf9130e). Their clarity and
-commitment to making statistics teaching openly accessible was the direct inspiration for this site.
-Topic depth was enriched by Frank Harrell's *Biostatistics for Biomedical Research*, the Biostats-R
-ecosystem at Bergen, UBC Okanagan's BIOL202, Sheffield's *Introductory Biostatistics with R*, and
-eR-Biostat. Any errors here are our own.
+- [Acknowledgements](acknowledgements.qmd) — the full list of people whose work made this curriculum possible.
