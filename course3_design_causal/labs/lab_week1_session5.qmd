@@ -121,7 +121,7 @@ nj  <- 10                              # obs per cluster
 dat <- tibble(
   cluster = factor(rep(seq_len(J), each = nj)),
   arm     = rep(rep(c(0, 1), each = nj), length.out = J * nj),
-  y       = NA_real_
+  y       = rnorm(J * nj)              # placeholder; simr overwrites
 )
 
 m0 <- makeLmer(
