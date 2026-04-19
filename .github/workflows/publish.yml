@@ -90,6 +90,8 @@ jobs:
             any::psych
             any::irr
             any::randomForestSRC
+            any::see
+            any::qqplotr
 
       - name: Restore Quarto freeze cache
         uses: actions/cache@v4
