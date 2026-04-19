@@ -66,10 +66,7 @@ or issue on the project's GitHub repository.
 
 ## Acknowledgements
 
-Heartfelt thanks to **Chi Zhang** and the OCBE team at the University of
-Oslo for their open-source course
-[*MF9130E — Introductory Course in Statistics*](https://ocbe-uio.github.io/teaching_mf9130e/)
-and the accompanying [GitHub repository](https://github.com/ocbe-uio/teaching_mf9130e).
-Their clarity and commitment to making statistics teaching openly
-accessible was the direct inspiration for this site. See
-[References](references.qmd) for the full list of sources.
+Nothing on this site grew in isolation. See the dedicated
+[Acknowledgements](acknowledgements.qmd) page for the full list of
+didactic sources, content references, tooling, and structural
+inspiration that made this curriculum possible.
