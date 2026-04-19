@@ -38,6 +38,7 @@ website:
     left: "Biostatistics Courses · MIT"
     center: |
       [Get Started](get_started.qmd) · [Schedule](schedule.qmd) ·
+      [Interactive apps](shiny.qmd) ·
       [Research workflow](appendices/research_workflow.qmd) ·
       [Decision tree](appendices/decision_tree.qmd) ·
       [Glossary](appendices/glossary.qmd) ·
