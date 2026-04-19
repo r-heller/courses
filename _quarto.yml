@@ -37,14 +37,14 @@ website:
   page-footer:
     left: "Biostatistics Courses · MIT"
     center: |
-      [Get Started](get_started.qmd) · [Schedule](schedule.qmd) ·
-      [Interactive apps](shiny.qmd) ·
-      [Research workflow](appendices/research_workflow.qmd) ·
-      [Decision tree](appendices/decision_tree.qmd) ·
-      [Glossary](appendices/glossary.qmd) ·
-      [Common errors](appendices/common_errors.qmd) ·
-      [Writing a report](appendices/writing_a_report.qmd) ·
-      [References](references.qmd)
+      [Get Started](/get_started.qmd) · [Schedule](/schedule.qmd) ·
+      [Interactive apps](/shiny.qmd) ·
+      [Research workflow](/appendices/research_workflow.qmd) ·
+      [Decision tree](/appendices/decision_tree.qmd) ·
+      [Glossary](/appendices/glossary.qmd) ·
+      [Common errors](/appendices/common_errors.qmd) ·
+      [Writing a report](/appendices/writing_a_report.qmd) ·
+      [References](/references.qmd)
     right: "Built with [Quarto](https://quarto.org)"
 
 format:
