@@ -13,12 +13,11 @@ execute:
   freeze: auto
 
 website:
-  title: "biostats_courses"
+  title: "#courses"
   description: "A four-course biostatistics programme in R and Quarto."
   site-url: "https://r-heller.github.io/courses/"
   navbar:
-    background: light
-    title: "biostats_courses"
+    title: "#courses"
     left:
       - href: course1_foundations/index.qmd
         text: "Course 1"
@@ -49,7 +48,9 @@ website:
 
 format:
   html:
-    theme: [flatly, custom.scss]
+    theme:
+      light: [flatly, custom.scss]
+      dark:  [darkly, custom.scss]
     css: styles.css
     toc: true
     toc-depth: 3

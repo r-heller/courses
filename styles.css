@@ -4,7 +4,9 @@
    Design language inspired by Hugo Coder
    ================================================================ */
 
-:root {
+/* Light palette (default + when Quarto toggle is set to light). */
+:root,
+[data-bs-theme="light"] {
   --bg: #ffffff;
   --fg: #23272b;
   --fg-alt: #555;
@@ -26,8 +28,25 @@
   --shadow-md: 0 4px 14px rgba(20,40,60,0.06);
 }
 
+/* Dark palette when Quarto toggle is set to dark. */
+[data-bs-theme="dark"] {
+  --bg: #1d1f21;
+  --fg: #e8e8e8;
+  --fg-alt: #a8a8a8;
+  --rule: #2d3035;
+  --surface: #26292c;
+  --accent: #79b8ff;
+  --accent-hover: #b8d4fd;
+  --accent-soft: #1f3a5f;
+  --code-bg: #2a2d31;
+  --code-fg: #e8e8e8;
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+/* Follow the OS only on first load when user has not picked a theme;
+   Quarto's toggle then overrides via data-bs-theme. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-bs-theme]) {
     --bg: #1d1f21;
     --fg: #e8e8e8;
     --fg-alt: #a8a8a8;
@@ -42,11 +61,13 @@
 }
 
 html { font-size: 17px; }
+html, body {
+  background: var(--bg) !important;
+  color: var(--fg);
+}
 body {
   font-family: var(--font-body);
   line-height: 1.65;
-  color: var(--fg);
-  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -70,7 +91,8 @@ a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); 
 hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 
 /* Navbar — quiet, Coder-like */
-.navbar {
+.navbar,
+.navbar-expand-lg {
   background: var(--bg) !important;
   border-bottom: 1px solid var(--rule);
   box-shadow: none;
@@ -93,6 +115,15 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .navbar .nav-link.active {
   color: var(--accent) !important;
   background: transparent;
+}
+/* Quarto's light/dark toggle button — match the quiet navbar style. */
+.navbar .quarto-color-scheme-toggle i,
+.navbar .quarto-color-scheme-toggle svg {
+  color: var(--fg-alt) !important;
+}
+.navbar .quarto-color-scheme-toggle:hover i,
+.navbar .quarto-color-scheme-toggle:hover svg {
+  color: var(--accent) !important;
 }
 
 /* TOC */
@@ -153,15 +184,25 @@ th, td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--rule); text-ali
 th { background: var(--surface); font-weight: 600; }
 tbody tr:hover { background: var(--surface); }
 
-/* Footer */
-.nav-footer, .page-footer {
+/* Footer — matches body background in both light and dark */
+.nav-footer,
+.page-footer,
+body > footer,
+footer.footer {
+  background: var(--bg) !important;
   border-top: 1px solid var(--rule);
   padding: 1.3rem 0;
   font-size: 0.88rem;
-  color: var(--fg-alt);
+  color: var(--fg-alt) !important;
 }
-.nav-footer a, .page-footer a { color: var(--fg-alt); }
-.nav-footer a:hover, .page-footer a:hover { color: var(--accent); }
+.nav-footer a,
+.page-footer a,
+body > footer a,
+footer.footer a { color: var(--fg-alt) !important; }
+.nav-footer a:hover,
+.page-footer a:hover,
+body > footer a:hover,
+footer.footer a:hover { color: var(--accent) !important; }
 
 img { max-width: 100%; height: auto; border-radius: var(--radius); }
 blockquote { border-left: 3px solid var(--rule); padding: 0.3rem 1rem; color: var(--fg-alt); }
