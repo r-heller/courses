@@ -8,6 +8,7 @@ project:
     - "course3_design_causal/**/*.qmd"
     - "course4_ml_highdim/**/*.qmd"
     - "appendices/**/*.qmd"
+    - "cheatsheets/**/*.qmd"
 
 execute:
   freeze: auto
@@ -37,6 +38,7 @@ website:
     left: "Biostatistics Courses · MIT"
     center: |
       [Get Started](/get_started.qmd) · [Schedule](/schedule.qmd) ·
+      [Cheatsheets](/cheatsheets.qmd) ·
       [Interactive apps](/shiny.qmd) ·
       [Research workflow](/appendices/research_workflow.qmd) ·
       [Decision tree](/appendices/decision_tree.qmd) ·
