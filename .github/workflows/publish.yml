@@ -82,6 +82,14 @@ jobs:
             any::changepoint
             any::tidycmprsk
             any::mstate
+            any::Rtsne
+            any::sandwich
+            any::lmtest
+            any::datasauRus
+            any::simr
+            any::psych
+            any::irr
+            any::randomForestSRC
 
       - name: Restore Quarto freeze cache
         uses: actions/cache@v4
