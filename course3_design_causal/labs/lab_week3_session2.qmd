@@ -73,6 +73,7 @@ cumulative incidence.
 library(tidyverse)
 library(survival)
 library(tidycmprsk)
+library(ggsurvfit)
 library(mstate)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -133,7 +134,7 @@ cif
 ```{r}
 #| fig-width: 6
 #| fig-height: 4
-tidycmprsk::ggcuminc(cif, outcome = c("recurrence", "death")) +
+ggsurvfit::ggcuminc(cif, outcome = c("recurrence", "death")) +
   labs(x = "Days", y = "Cumulative incidence")
 ```
 
