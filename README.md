@@ -31,6 +31,9 @@ quarto render        # builds articles + slides
 quarto preview
 ```
 
+## URL
+https://r-heller.github.io/courses/
+
 ## Licence
 
 MIT.
